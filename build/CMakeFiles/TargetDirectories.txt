@@ -1,0 +1,9 @@
+/home/mike/Desktop/CDS/build/CMakeFiles/CDS.dir
+/home/mike/Desktop/CDS/build/CMakeFiles/edit_cache.dir
+/home/mike/Desktop/CDS/build/CMakeFiles/rebuild_cache.dir
+/home/mike/Desktop/CDS/build/Widgets/CMakeFiles/WidgetLibrary.dir
+/home/mike/Desktop/CDS/build/Widgets/CMakeFiles/edit_cache.dir
+/home/mike/Desktop/CDS/build/Widgets/CMakeFiles/rebuild_cache.dir
+/home/mike/Desktop/CDS/build/Window/CMakeFiles/Window.dir
+/home/mike/Desktop/CDS/build/Window/CMakeFiles/edit_cache.dir
+/home/mike/Desktop/CDS/build/Window/CMakeFiles/rebuild_cache.dir

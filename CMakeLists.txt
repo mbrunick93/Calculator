@@ -2,22 +2,30 @@ cmake_minimum_required(VERSION 3.20.2)
 
 project(${This} C CXX)
 
-set(This TEST_SENDER)
+set(This Calculator)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GTKMM REQUIRED gtkmm-3.0 glibmm-2.4)
 
-enable_testing()
+include_directories(${GTKMM_INCLUDE_DIRS})
+link_directories(${GTKMM_LIBRARY_DIRS})
 
-#add_subdirectory(googletest)
-set(Sources main.cpp)
+
+#libraries
+add_subdirectory(Widgets)
+add_subdirectory(Window)
+
+
 
 add_executable(${This})
-target_sources(${This} PRIVATE ${Sources})
+target_sources(${This} PRIVATE main.cpp)
+target_link_libraries(${This} PUBLIC ${GTKMM_LIBRARIES} WidgetLibrary Window)
 
 
-add_subdirectory(external)
+
+

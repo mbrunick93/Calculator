@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Widgets",
+					"jsonFile" : "directory-Widgets-Debug-eb6f151431e51352e137.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Widgets",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Window",
+					"jsonFile" : "directory-Window-Debug-796fcf9d133ee0ad8384.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Window",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "C",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CDS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CDS-Debug-1f8ac6b007124fb53c50.json",
+					"name" : "CDS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "WidgetLibrary::@9ec960d51d2792b19b4f",
+					"jsonFile" : "target-WidgetLibrary-Debug-e8be4340373fc92f8a93.json",
+					"name" : "WidgetLibrary",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Window::@ccbf64fef3c7e3ef308f",
+					"jsonFile" : "target-Window-Debug-98af75d016c78121718d.json",
+					"name" : "Window",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mike/Desktop/CDS/build",
+		"source" : "/home/mike/Desktop/CDS"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

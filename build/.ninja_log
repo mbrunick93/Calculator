@@ -1,0 +1,9 @@
+# ninja log v5
+6	1709	1689636598576368223	Window/CMakeFiles/Window.dir/Window.cpp.o	e10272b3ae7a371
+3	1811	1689637254086132852	CMakeFiles/CDS.dir/main_window.cpp.o	1f5e340678337ac5
+1709	1721	1689636598588368331	Window/libWindow.a	96a29399400ed2e
+0	1136	1689636119041234459	Widgets/CMakeFiles/WidgetLibrary.dir/ButtonWidget.cpp.o	c9898e466405c15c
+6	954	1689640535273164678	Widgets/CMakeFiles/WidgetLibrary.dir/Range/ScrollBar.cpp.o	1a115820ee19a3bc
+954	963	1689640535285164694	Widgets/libWidgetLibrary.a	d2e9f88e761ac129
+964	1150	1689640535469164933	CDS	31529d14d8d8d79b
+3	965	1689640286652942056	Widgets/CMakeFiles/WidgetLibrary.dir/Buttons/ButtonWidget.cpp.o	e3e9bf842ed258ab
