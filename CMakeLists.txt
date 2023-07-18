@@ -12,19 +12,24 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTKMM REQUIRED gtkmm-3.0 glibmm-2.4)
 
-include_directories(${GTKMM_INCLUDE_DIRS})
+include_directories(    ${GTKMM_INCLUDE_DIRS} 
+                        ${CMAKE_SOURCE_DIR}/CalculatorCompute
+                        ${CMAKE_SOURCE_DIR}/CalculatorSignal
+)
 link_directories(${GTKMM_LIBRARY_DIRS})
 
 
 #libraries
-add_subdirectory(Widgets)
-add_subdirectory(Window)
-
-
+add_subdirectory(CalculatorCompute)
+add_subdirectory(CalculatorSignal)
 
 add_executable(${This})
 target_sources(${This} PRIVATE main.cpp)
-target_link_libraries(${This} PUBLIC ${GTKMM_LIBRARIES} WidgetLibrary Window)
+target_link_libraries(${This} PUBLIC ${GTKMM_LIBRARIES} CalcSignal CalcCompute )
+
+set_target_properties(${This} PROPERTIES
+                      RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
+)
 
 
 
